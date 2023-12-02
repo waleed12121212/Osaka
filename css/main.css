@@ -1,0 +1,87 @@
+:root{
+    --mainColor:rgb(255, 32, 110);
+}
+.header{
+   background-image: url('../img/bg_osaka.jpg');
+    background-size: cover;
+    width: 100%;
+    position: center;
+}
+.icon{
+    width: 3rem;
+    height: 3rem; 
+}
+.sochal-media .icon{
+    transition: background-color 1500ms;
+}
+.sochal-media .icon:hover {
+    background-color: var(--mainColor);
+}
+.services .container .service-item .icon {
+    transform: translate(-50%, -50%);
+}
+.services .container .service-item .icon i{
+    transition: color 0.8s ease;
+}
+.services .container .service-item .icon:hover i{
+    color: var(--mainColor);
+}
+.navbar .container-fluid .navbar-collapse ul li a:hover{
+    color:var(--mainColor);
+}
+.about{
+    background-image: url('../img/light_dot.jpg');
+}
+.h2-style{
+    font-size: 32px; line-height: 38.4px; color: rgb(33,37,41);
+}
+.services{
+    background-image: url('../img/dark_dot.jpg');
+}
+.services .container .service-item h3:after{
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 12%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: width 800ms;
+}
+.services .container .service-item:hover h3:after{
+    width: 30%;
+}
+.clients .container .client img{
+    width: 110px;
+    height: 110px;
+}
+/* .clients .container .client p{
+    width: 50%;
+    margin: auto;
+} */
+.clients{
+    background-color: #edecec;
+}
+.clients .container .carousel .carousel-indicators button{
+    height: 30px;
+    border-radius: 50%;
+    /* background-image: url('../img/person/blank-profile-picture-973460_640.webp'); */
+    background-size: cover;
+}
+.nav-tabs{
+    justify-content: center;
+}
+.nav-tabs .nav-item .show .nav-link, .nav-tabs .nav-link.active{
+    border: none;
+}
+.nav-tabs .nav-link:active{
+    color: var(--mainColor);
+}
+.nav-tabs .nav-link{
+    color: black;
+    border: none;
+}
+.nav-tabs .nav-link:hover{
+    color: var(--mainColor);
+}
